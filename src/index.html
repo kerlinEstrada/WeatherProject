@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Site</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer.footer {
+            background: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            margin-bottom: 20px;
+        }
+
+        .card-header {
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .current-weather-info,
+        .forecast-day {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .current-weather-info .temperature,
+        .current-weather-info .condition,
+        .forecast-day .day,
+        .forecast-day .forecast {
+            margin: 0;
+        }
+
+        .current-weather-info .temperature span,
+        .current-weather-info .condition span,
+        .forecast-day .forecast {
+            font-weight: bold;
+        }
+
+        .card-body {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Weather Site</h1>
+    </header>
+
+    <main class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <section id="current-weather" class="card">
+                    <div class="card-header">
+                        <h2>Current Weather</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="current-weather-info">
+                            <p class="temperature">Temperature: <span>25°C</span></p>
+                            <p class="condition">Condition: <span>Sunny</span></p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-6">
+                <section id="forecast" class="card">
+                    <div class="card-header">
+                        <h2>Forecast</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="forecast-day">
+                            <p class="day">Monday:</p>
+                            <p class="forecast">22°C, Cloudy</p>
+                        </div>
+                        <div class="forecast-day">
+                            <p class="day">Tuesday:</p>
+                            <p class="forecast">24°C, Sunny</p>
+                        </div>
+                        <div class="forecast-day">
+                            <p class="day">Wednesday:</p>
+                            <p class="forecast">20°C, Rainy</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2022 Weather Site. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
